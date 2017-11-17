@@ -265,6 +265,50 @@ body {
     
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    background-color: skyblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+}
+input, textarea {
+    border: 2px solid deepskyblue;
+    background-color: ghostwhite;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    width: 60vw;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#info input {
+    width: 25vw;
+    margin-left: 1.5vw;
+}
+
+textarea {
+    height:40vh;
+    width: 60vw;
+    margin: 1.5vw 0;
+}
+
+#submit {
+    width: 20vw;
+}
+
 
 
 /* Media Queries */
@@ -311,4 +355,14 @@ body {
     .thumbnail img {
         width: 80vw;
     }
+    
+    form, #info, textarea {
+        width: 85vw;
+    }
+    
+    #submit {
+        width: 42.5vw;
+    }
+    
+    
 }

@@ -64,6 +64,5 @@ function position_sun() {
 $(document).ready(function () {
 
     position_sun();
-
-
+    
 });
