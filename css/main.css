@@ -166,7 +166,7 @@ body {
 
 #about p {
     max-width: 30vw;
-    color: #0a0a0a;
+    color: ghostwhite;
     font-family: "Josefin Sans", sans-serif;
     font-size: 2em;
 }
@@ -221,6 +221,10 @@ body {
     margin: 2.5vh;
 }
 
+.odd {
+    flex-direction: row-reverse;
+}
+
 .thumbnail,
 .description {
     display: flex;
@@ -233,6 +237,15 @@ body {
     margin: 0 2.5vw;
     border: 2px solid deepskyblue;
 }
+
+
+
+.thumbnail:hover,
+.description:hover {
+    box-shadow: -10px 10px deepskyblue;
+}
+
+
 
 .description {
     background-color: skyblue;
@@ -247,13 +260,22 @@ body {
     width: 25vw;
 }
 
+.created {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 .description ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-family: "Raleway", sans-serif;
+    color: aliceblue;
     font-weight: 100;
+}
 
+.description li {
+    margin: 2.5px auto;
 }
 
 .thumbnail img {
@@ -262,18 +284,18 @@ body {
     height: 40vh;
     width: 30vw;
     border: 2px solid deepskyblue;
-    
+
 }
 
 .contact {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     background-color: skyblue;
 }
 
-form {
+/*form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,7 +330,42 @@ textarea {
 #submit {
     width: 20vw;
 }
+*/
 
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+footer ul {
+    display: flex;
+    width: 30vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+.icon {
+    font-size: 4em;
+    color: ghostwhite;
+    padding: 5px;
+}
+
+.icon a {
+    color: ghostwhite;
+}
+
+.icon a:hover {
+    border-bottom: 5px solid ghostwhite;
+
+}
 
 
 /* Media Queries */
@@ -329,20 +386,18 @@ textarea {
 
     .project {
         height: 100vh;
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin: 0;
     }
 
-    .odd {
-        flex-direction: column-reverse;
-    }
+
 
     .description {
         width: 80vw;
         margin: 2.5vh 2.5vw;
-        font-size: 1em
+        font-size: 1.25em
     }
-    
+
     .description p {
         width: 75vw;
     }
@@ -351,18 +406,24 @@ textarea {
         width: 80vw;
         margin: 2.5vh 2.5vw;
     }
-    
+
     .thumbnail img {
         width: 80vw;
     }
-    
-    form, #info, textarea {
+
+    footer ul {
+        width: 80vw;
+    }
+
+    .icon {
+        font-size: 2em;
+    }
+
+    /*form, #info, textarea {
         width: 85vw;
     }
     
     #submit {
         width: 42.5vw;
-    }
-    
-    
+    }*/
 }

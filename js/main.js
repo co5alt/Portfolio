@@ -16,6 +16,7 @@ function position_sun() {
         day_remaining = sunset - time;
         position = 100 - Math.round(day_remaining / day_length * 100);
         rotation = position * 1.8;
+        console.log(time);
 
         if (time >= sunrise && time < sunset) {
             $("#fulcrum").css("transform", "rotate(" + rotation + "deg)");
@@ -51,7 +52,7 @@ function position_sun() {
                 $("#greeting").text("Good Evening, ");
             }
             else {
-                 $("#greeting").text("You're up late! ");
+                 $("#greeting").text("Hello, ");
             }
         }
     });
