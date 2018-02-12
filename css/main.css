@@ -170,7 +170,7 @@ body {
 
 #about p {
     max-width: 30vw;
-    color: ghostwhite;
+    color: blue;
     font-family: "Josefin Sans", sans-serif;
     font-size: 2em;
 }
@@ -208,9 +208,9 @@ body {
 
 
 .portfolio {
-    background-color: ghostwhite;
-    border-top: 5px solid deepskyblue;
-     border-bottom: 5px solid deepskyblue;
+    background-color: deepskyblue;
+    border-top: 5px solid blue;
+     border-bottom: 5px solid blue;
     padding-bottom: 7.5vh;
 }
 
@@ -242,20 +242,20 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 2.5vw;
-    border: 2px solid deepskyblue;
+    border: 2px solid ghostwhite;
 }
 
 
 
 .thumbnail:hover,
 .description:hover {
-    box-shadow: -10px 10px deepskyblue;
+    box-shadow: -10px 10px skyblue;
 }
 
 
 
 .description {
-    background-color: skyblue;
+    background-color: ghostwhite;
     text-transform: uppercase;
     font-size: 1.5em;
 
@@ -263,7 +263,7 @@ body {
 
 .description p {
     font-family: "Josefin Sans", sans-serif;
-    color: aliceblue;
+    color: blue;
     width: 25vw;
 }
 
@@ -277,7 +277,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     font-family: "Raleway", sans-serif;
-    color: aliceblue;
+    color: blue;
     font-weight: 100;
 }
 
@@ -290,7 +290,7 @@ body {
     margin: 0 2.5vw;
     height: 40vh;
     width: 30vw;
-    border: 2px solid deepskyblue;
+    border: 2px solid ghostwhite;
 
 }
 
@@ -303,8 +303,8 @@ body {
     width: 60vw;
 }
 input, textarea {
-    border: 2px solid deepskyblue;
-    background-color: ghostwhite;
+    border: 2px solid ghostwhite;
+    background-color: deepskyblue;
 }
 
 #info {
@@ -354,16 +354,16 @@ footer ul {
 
 .icon {
     font-size: 4em;
-    color: ghostwhite;
+    color: blue;
     padding: 5px;
 }
 
 .icon a {
-    color: ghostwhite;
+    color: blue;
 }
 
 .icon a:hover {
-    border-bottom: 5px solid ghostwhite;
+    border-bottom: 5px solid deepskyblue;
 
 }
 

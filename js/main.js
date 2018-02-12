@@ -26,22 +26,22 @@ function position_sun() {
             if (time >= sunset - 3600) {
                 $("#about").css("flex-direction", "row");
                 $("#about").css("justfy-content", "flex-start");
-                $("body").css("background-color", "deepskyblue");
+                $("body").css("background-color", "ghostwhite");
                 $("#greeting").text("Good Evening, ");
             } else if (time >= sunrise + day_length / 2) {
                 $("#about").css("flex-direction", "row");
                 $("#about").css("justfy-content", "flex-start");
-                $("body").css("background-color", "deepskyblue");
+                $("body").css("background-color", "ghostwhite");
                 $("#greeting").text("Good Afternoon,");
             } else if (sunrise + 10800 >= time) {
                 $("#about").css("flex-direction", "row-reverse");
                 $("#about").css("justfy-content", "flex-end");
-                $("body").css("background-color", "skyblue");
+                $("body").css("background-color", "ghostwhite");
                 $("#greeting").text("Good Morning, ");
             } else {
                 $("#about").css("flex-direction", "row");
                 $("#about").css("justfy-content", "flex-start");
-                $("body").css("background-color", "skyblue");
+                $("body").css("background-color", "ghostwhite");
                 $("#greeting").text("Hello, ");
 
             }
@@ -49,7 +49,7 @@ function position_sun() {
         } else {
             if (sunrise + 7200 >= time) {
                 $("body").css("background-color", "black");
-                $("#about").css("color", "ghostwhite");
+                $("#about").css("color", "deepskyblue");
                 $(".sun").css("display", "none");
                 $("#greeting").text("Good Evening, ");
             }
