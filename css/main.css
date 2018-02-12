@@ -155,6 +155,10 @@ body {
     height: 100vh;
 }
 
+.hero {
+    
+}
+
 
 #about {
     display: flex;
@@ -205,6 +209,9 @@ body {
 
 .portfolio {
     background-color: ghostwhite;
+    border-top: 5px solid deepskyblue;
+     border-bottom: 5px solid deepskyblue;
+    padding-bottom: 7.5vh;
 }
 
 .flex-container {
@@ -287,13 +294,6 @@ body {
 
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: skyblue;
-}
 
 /*form {
     display: flex;

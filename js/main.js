@@ -7,6 +7,8 @@ var day_remaining;
 var position;
 var rotation;
 
+
+
 function position_sun() {
     $.getJSON(omaha_url, function (data) {
         time = data.dt;
@@ -60,10 +62,13 @@ function position_sun() {
 
 
 
-
-
 $(document).ready(function () {
+    
+    
 
     position_sun();
     
+    
+    
 });
+
