@@ -247,11 +247,14 @@ body {
 
 
 
-.thumbnail:hover,
+
 .description:hover {
     box-shadow: -10px 10px skyblue;
 }
 
+.thumbnail:hover {
+    border: 10px double ghostwhite;
+}
 
 
 .description {
